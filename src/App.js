@@ -4,7 +4,8 @@ import './App.css';
 
 const App = () => {
   return (
-    <div>Hi ra jaffa </div>
+    <div>Hi How are you</div>
+
   )
 }
 export default App;
