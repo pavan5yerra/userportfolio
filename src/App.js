@@ -1,10 +1,12 @@
 import React from "react";
-
+import User from './container/User';
 import './App.css';
 
 const App = () => {
   return (
-    <div>Hi ra jaffa </div>
+    <div>
+      <User/>
+    </div>
 
   )
 }
