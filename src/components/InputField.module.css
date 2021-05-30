@@ -1,0 +1,20 @@
+.input{
+    background-color: rgb(211, 211, 211);
+    text-decoration: black;
+    font-weight: bolder;
+    width: 30%;
+    height: 25px;
+    border-radius: 4px;
+}
+
+.div {
+    justify-content: center;
+    display: flex;
+    flex-direction:row ;
+    font-weight: bolder;
+    text-align: center;
+}
+.comp{
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+.button{
+
+    background-color: orange;
+    width: auto;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: black;
+
+}

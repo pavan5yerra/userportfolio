@@ -1,6 +1,7 @@
+import * as styles from './button.module.css';
 const button = (props) => {
     return (
-        <button onClick ={props.clicked}>ADD</button>
+        <button className={styles.button} onClick ={props.clicked}>{props.val}</button>
     )
 }
 export default button;

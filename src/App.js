@@ -1,10 +1,10 @@
 import React from "react";
 import User from './container/User';
-import './App.css';
+import * as styles from './App.module.css';
 
 const App = () => {
   return (
-    <div>
+    <div className = {styles.App}>
       <User/>
     </div>
 

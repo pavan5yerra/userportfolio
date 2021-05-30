@@ -24,15 +24,11 @@ export const changePassword = (val) =>{
 }
 
 const addUser = (user)=> {
-   
-
         fetch('/adduser',{method: "POST"
         ,body: JSON.stringify(user)
         , headers: {
             "Content-type": "application/json; charset=UTF-8"
-        }}).then(console.log("data added"))
-  
-       
+        }}).then(console.log("data added"))    
 
         return{
             type:"ADDTODB",
@@ -42,8 +38,13 @@ const addUser = (user)=> {
         
 }
 
-const showUser = ()=> {
-    fetch('/showusers').then(res => res.json()).then(data=> console.log(data))
+
+
+const showUser = (users)=> {
+    return {
+        type:"GETUSERS",
+        users:users
+    }
 }
 export const addtoMongo = (user,dispatch) => {
     dispatch(addUser(user))
@@ -51,5 +52,6 @@ export const addtoMongo = (user,dispatch) => {
 }
 
 export const displayUsers = (dispatch) => {
-    dispatch(showUser)
+    fetch('/showusers').then(res => res.json()).then(users=> dispatch(showUser(users)))
+    
 }

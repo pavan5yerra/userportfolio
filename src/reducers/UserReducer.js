@@ -3,7 +3,9 @@ const initialState={
         name:null,
         email:null,
         password:null
-    }
+    },
+    data:null,
+
 }
 const UserReducer = (state=initialState,actions) => {
 
@@ -23,6 +25,13 @@ const UserReducer = (state=initialState,actions) => {
                 ...state,
                 user: {...state.user,password:actions.value}     
              }
+        case "GETUSERS":
+    
+            return{
+                ...state,
+                data:actions.users
+
+            }
         default:
             return state;
   

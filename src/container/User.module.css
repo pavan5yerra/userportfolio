@@ -1,0 +1,30 @@
+.port{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.input{
+    background-color: blueviolet;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.display{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: rgb(125, 231, 245);
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.user{
+    background-color: rgb(183, 138, 209);
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
